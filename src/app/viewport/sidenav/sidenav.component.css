@@ -1,0 +1,25 @@
+mat-drawer-container{
+    height: 100%;
+}
+mat-drawer{
+    width: 260px;
+    background-color: lightcoral;
+}
+mat-drawer-content{
+    padding: 20px;
+    margin-left: 20px;
+    background-color: lightseagreen;
+}
+.font-color{
+    color: yellow;
+    font-size: 17px;
+    width: 100%;
+}
+mat-icon{
+    transform: scale(1.3);        
+}
+
+button:hover{
+    background-color: blue;
+    border-bottom: 2px solid white;   
+}

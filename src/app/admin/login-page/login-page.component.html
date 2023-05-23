@@ -1,0 +1,10 @@
+<div id="container">
+     <form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)">
+        <div id="login">Login</div>
+        <input type="text" name="name" placeholder="Enter the name" ngModel required #name="ngModel">
+        <span *ngIf=" name.touched && name.invalid">Enter the valid name</span>
+        <input type="password" name="password" placeholder="Enter the password" minlength="3" ngModel required #pass="ngModel">
+        <span *ngIf="pass.touched && pass.invalid" > Enter the minimum 3 char </span>
+        <div id="button"><button [disabled]="loginForm.invalid">Login</button></div>
+     </form>
+</div>

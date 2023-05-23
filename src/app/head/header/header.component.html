@@ -1,0 +1,35 @@
+
+<mat-toolbar color="primary">
+    <button mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="example-spacer"></span>
+    <button mat-button routerLink="/home" routerLinkActive="active">
+      <span>Home</span>
+    </button>
+    <button mat-button routerLink="/about" routerLinkActive="active">
+      <span>about</span>
+    </button>
+    <button mat-button routerLink="/gallery" routerLinkActive="active">
+      <span>gallery</span>
+    </button>
+    <button mat-button routerLink="/login_page" routerLinkActive="active">
+      <span>Login</span>
+    </button>
+    <button mat-button [matMenuTriggerFor]="menu"><span>Account</span></button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item routerLink="/profile" class="menu-button">
+            <mat-icon class="icon">account_circle</mat-icon>Profile
+          </button>
+          <button mat-menu-item class="menu-button">
+            <mat-icon class="icon">settings</mat-icon>Settings 
+          </button>
+          <button mat-menu-item class="menu-button" routerLink="/login_page">
+            <mat-icon class="icon">exit_to_app</mat-icon>Logout
+          </button>
+        </mat-menu>
+       
+   
+
+  </mat-toolbar>
+

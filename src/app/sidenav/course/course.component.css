@@ -1,0 +1,36 @@
+mat-icon{
+    color: red;
+}
+th{
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: center;
+}
+td{
+    font-size:18px;
+    color: blue;
+    text-align: center;
+    border: 1px solid blue;
+    background-color: lightcyan;
+}
+#headbg1, #headbg2, #headbg3, #headbg4,#headbg5{
+    background-color:navy;
+}
+        /* code for action button  */
+button:hover{
+    background-color: blue;
+}
+button:hover mat-icon{
+    color: yellow;
+}
+mat-paginator{
+    border-bottom: 2px solid rgb(182, 181, 181);
+    background-color: rgba(240, 128, 128, 0.623);
+    color: blue;
+    font-size: 15px;
+    margin-top: 1px;
+}
+ng-container:hover{
+    background-color: red;
+}

@@ -1,0 +1,48 @@
+.wrapper{
+    text-align: center;
+}
+mat-toolbar{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    position: relative;
+}
+.close-icon{
+    position: absolute;
+    right: 15px;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.close-icon:hover{ transform: scale(2);}
+img{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 10px 0;
+    
+}p{
+    font-size: 20px;
+    font-weight: bold;
+    color:navy
+}
+mat-form-field{
+    width: 50%;
+}
+#update{
+    background-color: blue;
+    width: 40%;
+    border-radius: 20%;
+}
+button span{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+mat-label{
+   color: green;
+}
+
+
+
+

@@ -1,0 +1,27 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  span{
+     font-size: 17px;
+  }
+  mat-icon{
+    font-size: 25px;
+  }
+  .active{
+     background-color: green;
+  }
+  .icon{
+   color: green;
+  }
+  
+  button{
+   margin: 5px;
+  }
+  button:hover{
+     background-color: red;
+     border-bottom: 2px solid white;
+  }
+  .menu-button{
+   margin: 0;
+  }
+  

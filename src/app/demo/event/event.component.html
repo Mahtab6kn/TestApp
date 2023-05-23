@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<button (click)="getValue('hello');">click</button><br><br>
+<input type="text" #box placeholder="Enter name" name="userName"
+ (keyup)="getValue(box.value)">
+ <!-- (click)="getValue(box.placeholder)"
+ (keydown)="getValue(box.name)"
+ (blur)="getValue(box.name)"
+ (focus)="getValue(box.name)"
+ (input)="getValue(box.value)" -->
+ 
+ <p>
+    {{box.value}}
+ </p>

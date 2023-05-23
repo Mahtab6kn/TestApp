@@ -1,0 +1,56 @@
+<mat-toolbar>Update Profile
+     <mat-icon routerLink="/dashboard" class="icon">close</mat-icon>
+</mat-toolbar><br><br>
+                     <!-- Institue  -->
+<mat-form-field>
+    <mat-label>Institue</mat-label>
+    <input matInput type="text" #institue>
+    <button *ngIf="institue.value" matSuffix mat-icon-button (click)="institue.value=''">
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-form-field>
+                        <!-- Institue code  -->
+<mat-form-field>
+    <mat-label>Institue code</mat-label>
+    <input matInput type="number" #code maxlength="4">
+    <button *ngIf="code.value" matSuffix mat-icon-button  (click)="code.value=''">
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-form-field>
+                    <!-- Name -->
+<mat-form-field>
+    <mat-label>Name</mat-label>
+    <input type="text" matInput #name>
+    <button *ngIF="name.value" matSuffix mat-icon-button (click)="name.value=''">
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-form-field>
+<mat-form-field>
+                      <!-- Email -->
+    <mat-label>Email</mat-label>
+    <input type="email" matInput #email>
+    <button *ngIF="email.value" matSuffix mat-icon-button (click)="email.value=''">
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-form-field>
+<mat-form-field>
+                  <!-- contact no. -->
+    <mat-label>Contact No.</mat-label>
+    <input type="number" matInput #contact>
+    <button *ngIf="contact.value" matSuffix mat-icon-button (click)="contact.value=''">
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-form-field>
+<mat-form-field>
+                  <!-- Address  -->
+     <mat-label>Address</mat-label>
+     <textarea matInput #address></textarea>
+     <button *ngIF="address.value" matSuffix mat-icon-button (click)="address.value=''">
+        <mat-icon>close</mat-icon>
+     </button>
+</mat-form-field>
+                   <!-- button -->
+<div class="wrapper">
+    <button mat-button class="submit">Submit</button>
+    <button mat-button class="reset">Reset</button>
+</div>

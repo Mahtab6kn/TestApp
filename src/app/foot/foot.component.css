@@ -1,0 +1,14 @@
+mat-toolbar{
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+}
+span{
+    margin: 0 auto;
+    position: relative;
+}
+#copy{
+    position: absolute;
+    bottom: 3px;
+    left: -25px;
+}

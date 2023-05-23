@@ -1,0 +1,30 @@
+<mat-drawer-container >
+    <mat-drawer opened mode="side" #sidenav>
+       <button mat-button class="font-color" routerLink="/dashboard"><mat-icon>dashboard</mat-icon> Dashboard</button>
+       <mat-divider></mat-divider>
+       <button mat-button class="font-color" routerLink="/course"><mat-icon>school</mat-icon> Course</button><br>
+       <mat-divider></mat-divider>
+       <button mat-button class="font-color" routerLink="/batch"><mat-icon> local_library</mat-icon> Batch</button><br>
+       <mat-divider></mat-divider>
+       <button mat-button class="font-color"><mat-icon>directions_run</mat-icon> Take Admission</button><br>
+       <mat-divider></mat-divider>
+       <button mat-button class="font-color"><mat-icon>spa</mat-icon> Dues</button><br>
+       <mat-divider></mat-divider>
+       <button mat-button class="font-color"><mat-icon>money</mat-icon> Fees</button><br>
+       <mat-divider></mat-divider>
+       <button mat-button class="font-color"><mat-icon>live_tv</mat-icon> Live class</button><br>
+       <mat-divider></mat-divider>
+       <button mat-button class="font-color"><mat-icon>group_add</mat-icon> Query</button><br>
+       <mat-divider></mat-divider>
+       <button mat-button class="font-color"><mat-icon>event_available</mat-icon> Result</button><br>
+       <mat-divider></mat-divider>
+       <button mat-button class="font-color"><mat-icon>group</mat-icon> Quiz</button><br>
+       <mat-divider></mat-divider>
+       <button mat-button class="font-color"><mat-icon>event_note</mat-icon>Study material</button>
+       <mat-divider></mat-divider>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+        <!-- <button (click)="sidenav.toggle()">click me</button> -->
+    </mat-drawer-content>
+  </mat-drawer-container>

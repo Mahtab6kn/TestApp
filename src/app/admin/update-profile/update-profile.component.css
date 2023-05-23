@@ -1,0 +1,34 @@
+mat-form-field{
+    width: 40%;
+    margin-left: 50px;
+}
+mat-toolbar{
+    background-color: green;
+    color:red;
+    font-size: 25px;
+    position: relative;
+}
+.icon {
+    transform: scale(1.5);
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+mat-icon:hover{
+    transform: scale(2);
+}
+.wrapper{
+    text-align: center;
+    margin: 50px;
+}
+.submit{
+    background-color: green;
+    margin-right: 50px;
+    padding: 10px 30px;
+    color: white;
+}
+.reset{
+    background-color: red;
+    padding: 10px 35px;
+    color: white;
+}

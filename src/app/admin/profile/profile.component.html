@@ -1,0 +1,47 @@
+<div class="wrapper">
+    <mat-toolbar>
+    Profile
+    <mat-icon class="close-icon" routerLink="/dashboard">close</mat-icon>
+    </mat-toolbar>
+    <div id="form-container">
+        <img class="mat-elevation-z8" src="assets/gs logo.png" alt="">
+        <P>Green Soft</P><br>
+    
+    <form>
+        <mat-form-field>
+            <mat-label> Institue</mat-label>
+            <input matInput type="text" value="Green Soft Institue" #institue>
+             <button *ngIf="institue.value" matSuffix mat-icon-button aria-label="Clear" (click)="institue.value=''">
+               <mat-icon>close</mat-icon>
+             </button>
+        </mat-form-field><br>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput type="email" value="greensoft@gmail.com" #email>
+            <button *ngIf="email.value" matSuffix mat-icon-button (click)="email.value=''">
+                <mat-icon>close</mat-icon>
+            </button>
+        </mat-form-field><br>
+        <mat-form-field>
+            <mat-label> Name </mat-label>
+            <input matInput type="text" value="Green Soft" maxlength="15" #name>
+            <button *ngIf="name.value" matSuffix mat-icon-button (click)="name.value=''">
+                <mat-icon>close</mat-icon>
+            </button>
+            <mat-hint align="end">{{name.value.length}}/15</mat-hint>
+        </mat-form-field><br>
+        <mat-form-field>
+            <mat-label> Address</mat-label>
+            <textarea matInput maxlength="100" #add >Rambalak chowk , Hajipur , (Vaishali)</textarea>
+            <mat-hint align="end">{{add.value.length}}/100</mat-hint>
+        </mat-form-field><br>
+        <mat-form-field>
+            <mat-label>Contact No.</mat-label>
+            <!-- <span matPrefix>+91 &nbsp;</span> -->
+            <input matInput type="number" value="2345678991" maxlength="10">
+            <mat-icon matSuffix>mode_edit</mat-icon>
+        </mat-form-field>
+    </form><br>
+    <button mat-button id="update" routerLink="/u_profile"><span>update profile</span></button>
+    </div>
+</div>
